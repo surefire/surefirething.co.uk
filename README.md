@@ -38,6 +38,16 @@ $ foreman start
 00:00:01 web.1 | SureFire server listening on 0.0.0.0:3000
 ```
 
+## Documentation
+
+Annotated source documentation can be generated using [Docco]:
+
+```sh
+$ ./node_modules/.bin/cake docs
+docco: src/app.coffee -> docs/app.html
+docco: src/server.coffee -> docs/server.html
+...
+```
 
 ## Authors
 
@@ -55,3 +65,4 @@ Copyright (c) 2012 SureFire. See LICENSE for details.
 [node.js]: http://nodejs.org/
 [npm]: http://npmjs.org/
 [express]: http://expressjs.com/
+[docco]: http://jashkenas.github.com/docco/
