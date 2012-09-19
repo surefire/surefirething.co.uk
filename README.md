@@ -1,7 +1,7 @@
 # SureFireThing.co.uk
 
 [SureFire's][surefire] website. Powered by the [Express] web application
-framework for [Node.js].
+framework for [Node.js] using [CoffeeScript], [Jade] and [LESS].
 
 
 ## Requirements
@@ -66,3 +66,6 @@ Copyright (c) 2012 SureFire. See LICENSE for details.
 [npm]: http://npmjs.org/
 [express]: http://expressjs.com/
 [docco]: http://jashkenas.github.com/docco/
+[coffeescript]: http://coffeescript.org/
+[jade]: http://jade-lang.com/
+[less]: http://lesscss.org/
