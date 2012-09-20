@@ -17,7 +17,7 @@ framework for [Node.js] using [CoffeeScript], [Jade] and [LESS].
 Clone the repository:
 
 ```sh
-$ git clone andrewgarner:surefirething.co.uk.git
+$ git clone git@github.com:surefire/surefirething.co.uk.git
 ```
 
 Install dependent packages using [NPM]:
