@@ -16,24 +16,14 @@ app.set 'case sensitive routing'
 # treated differently.
 app.set 'strict routing'
 
-# Configure application middleware to render stylesheets using the
-# [LESS dynamic stylesheet language](http://lesscss.org/).
-app.use require('less-middleware')(
-  dest: __dirname + '/../public/stylesheets'
-  src: __dirname + '/../src'
-  prefix: '/stylesheets'
-  compress: true
-)
+# Configure application middleware to manage assets.
+app.use require('connect-assets')()
 
 # Configure application middleware to log all requests.
 app.use express.logger()
 
 # Configure application middleware to apply defined routes.
 app.use app.router
-
-# Configure application middleware to intercept requests for static files
-# and serve them as a response.
-app.use express.static(__dirname + '/../public')
 
 # Define application routes.
 app.get '/', (req, res) ->
