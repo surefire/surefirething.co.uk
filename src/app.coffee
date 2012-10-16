@@ -29,4 +29,4 @@ app.use app.router
 
 # Define application routes.
 app.get '/', (req, res) ->
-  res.render 'index', title: 'SureFire'
+  res.render 'index'

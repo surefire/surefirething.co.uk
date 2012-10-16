@@ -1,7 +1,13 @@
 doctype 5
 html
   head
-    title= title
+    meta(charset='utf-8')
+    title SureFire
     link(href=css('surefire'), rel='stylesheet', type='text/css')
   body
+    header
+      h1 SureFire
     block content
+    footer
+      p
+        small © #{ new Date().getFullYear() } SureFire. All Rights Reserved.
