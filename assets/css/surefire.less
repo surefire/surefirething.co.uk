@@ -1,4 +1,50 @@
+@import "../bootstrap/less/variables.less";
+@import "../bootstrap/less/mixins.less";
+@import "../bootstrap/less/reset.less";
+@import "../bootstrap/less/scaffolding.less";
+@import "../bootstrap/less/type.less";
+
+@sansFontFamily:     "HelveticaNeue-Light", "Helvetica Neue Light",
+                     "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+                     sans-serif;
+
+@baseFontSize:       18px;
+@baseLineHeight:     26px;
+
+@textColor:          rgb(116, 118, 121);
+@linkColor:          rgb(77, 78, 83);
+
+@headingsColor:      rgb(229, 29, 155);
+@headingsFontWeight: 300;
+
+@bodyBackground:     rgb(242, 242, 242);
+
+h1, h2, h3, h4, h5, h5, p {
+  text-shadow: 0px 1px 0px @white;
+}
+
+small {
+  font-size: 70%;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 80px;
+}
+
+header {
+  padding-bottom: 20px;
+}
+
+footer {
+  padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding: 20px;
+  }
+
+  footer {
+    padding-top: 20px;
+  }
 }
