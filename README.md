@@ -18,6 +18,8 @@ Clone the repository:
 
 ```sh
 $ git clone git@github.com:surefire/surefirething.co.uk.git
+$ git submodule init
+$ git submodule update
 ```
 
 Install dependent packages using [NPM]:
