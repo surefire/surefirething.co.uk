@@ -18,6 +18,7 @@
 @headingsFontWeight: 300;
 
 @bodyBackground:     rgb(242, 242, 242);
+@bodyPadding:        80px;
 
 @logoWidth:          270px;
 @logoHeight:         78px;
@@ -44,29 +45,40 @@ small {
 }
 
 body {
-  padding: 80px;
+  padding: @bodyPadding;
 }
 
 header {
-  padding-bottom: 20px;
+  padding-bottom: @bodyPadding / 4;
 }
 
-footer {
-  padding-top: 80px;
-}
+@media only screen
+       and (max-device-width: 320px) {
+         @padding: @bodyPadding / 4;
 
-@media only screen and (max-width: 767px) {
-  @padding: 20px;
+         body {
+           padding: @padding;
 
-  body {
-    padding: @padding;
+           &.fullscreen {
+             padding-top: @padding + 20px;
+           }
+         }
+       }
 
-    &.fullscreen {
-      padding-top: @padding + 20px;
-    }
-  }
+@media only screen
+       and (max-device-width: 320px)
+       and (orientation:portrait) {
+         footer {
+           position: fixed;
+           bottom: @bodyPadding / 4;
+         }
+       }
 
-  footer {
-    padding-top: @padding;
-  }
-}
+@media only screen
+       and (min-device-width: 768px)
+       and (max-device-width: 1024px) {
+         footer {
+           position: fixed;
+           bottom: @bodyPadding;
+         }
+       }
