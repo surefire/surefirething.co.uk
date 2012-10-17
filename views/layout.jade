@@ -1,14 +1,40 @@
 doctype 5
-html
+html(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
+
   head
+
     meta(charset='utf-8')
+
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    meta(property='og:title', content='SureFire')
+    meta(property='og:type', content='company')
+    meta(property='og:url', content='http://www.surefirething.co.uk')
+    meta(property='og:image:url', content='http://www.gravatar.com/avatar/061786c8573e698f86552feaafdd0e3c.png?s=420')
+    meta(property='og:image:secure_url', content='https://secure.gravatar.com/avatar/061786c8573e698f86552feaafdd0e3c.png?s=420')
+    meta(property='og:image:type', content='image/png')
+    meta(property='og:image:width', content='420')
+    meta(property='og:image:height', content='420')
+    meta(property='og:site_name', content='SureFire')
+    meta(property='og:description', content='No-nonsense software consultancy')
+    meta(property='og:locality', content='London')
+    meta(property='og:country-name', content='UK')
+    meta(property='og:email', content='info@surefirething.co.uk')
+    meta(property='og:phone_number', content='+447971232140')
+    meta(property='fb:app_id', content='546135282068613')
+    meta(property='fb:admins', content='517274661')
+
     title SureFire
+
     link(href=css('surefire'), rel='stylesheet', type='text/css')
+
   body
+
     header
       h1 SureFire
+
     block content
+
     footer
       p
         small © #{ new Date().getFullYear() } SureFire. All Rights Reserved.
