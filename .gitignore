@@ -13,5 +13,6 @@ docs
 pids
 logs
 results
+builtAssets
 
 npm-debug.log
