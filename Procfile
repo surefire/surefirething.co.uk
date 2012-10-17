@@ -1,1 +1,1 @@
-web: npm restart
+web: ./node_modules/.bin/coffee ./lib/server.coffee

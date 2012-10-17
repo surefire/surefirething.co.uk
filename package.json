@@ -40,8 +40,4 @@
 , "config" :
   { "port" : "3000"
   }
-, "scripts" :
-  { "start" : "node ./lib/server.js"
-  , "prestart" : "./node_modules/.bin/cake build"
-  }
 }
