@@ -27,6 +27,19 @@ app.use express.logger()
 # Configure application middleware to apply defined routes.
 app.use app.router
 
+# Configure application middleware to handle errors.
+app.use (err, req, res, next) ->
+  console.error err.stack
+  res.status 500
+  res.render 'error', title:   '500 · SureFire'
+                    , message: 'Something broke!'
+
+# Configure application middleware to handle missing resources.
+app.use (req, res, next) ->
+  res.status 404
+  res.render 'error', title:   '500 · SureFire'
+                    , message: 'Sorry cant find that!'
+
 # Define application routes.
 app.get '/', (req, res) ->
-  res.render 'index'
+  res.render 'index', title: 'SureFire'
