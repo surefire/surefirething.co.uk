@@ -16,13 +16,13 @@ app.set 'case sensitive routing'
 # treated differently.
 app.set 'strict routing'
 
+# Configure application middleware to log all requests.
+app.use express.logger()
+
 # Configure application middleware to manage assets.
 app.use require('connect-assets')(
   pathsOnly: true
 )
-
-# Configure application middleware to log all requests.
-app.use express.logger()
 
 # Configure application middleware to apply defined routes.
 app.use app.router
