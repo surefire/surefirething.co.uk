@@ -40,16 +40,28 @@ h1 {
   }
 }
 
-small {
-  font-size: 70%;
-}
-
 body {
   padding: @bodyPadding;
 }
 
 header {
   padding-bottom: @bodyPadding / 4;
+}
+
+footer{
+  padding-top: @bodyPadding;
+
+  p {
+    margin-bottom: @baseLineHeight - 20;
+    font-size: 50%;
+    line-height: @baseLineHeight - 10;
+    color: lighten(@textColor, 15%);
+
+    &:first-child {
+      font-size: 70%;
+      color: lighten(@textColor, 12.5%);
+    }
+  }
 }
 
 @media only screen
@@ -62,23 +74,5 @@ header {
            &.fullscreen {
              padding-top: @padding + 20px;
            }
-         }
-       }
-
-@media only screen
-       and (max-device-width: 320px)
-       and (orientation:portrait) {
-         footer {
-           position: fixed;
-           bottom: @bodyPadding / 4;
-         }
-       }
-
-@media only screen
-       and (min-device-width: 768px)
-       and (max-device-width: 1024px) {
-         footer {
-           position: fixed;
-           bottom: @bodyPadding;
          }
        }
