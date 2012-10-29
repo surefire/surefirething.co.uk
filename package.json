@@ -26,7 +26,7 @@
 , "dependencies" :
   { "express" : "3.x"
   , "connect-assets" : "https://github.com/surefire/connect-assets/tarball/master"
-  , "coffee-script" : "1.3.x"
+  , "coffee-script" : "1.4.x"
   , "jade" : "*"
   , "less" : "1.3.x"
   }
