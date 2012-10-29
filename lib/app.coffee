@@ -42,7 +42,7 @@ app.use (err, req, res, next) ->
 app.use (req, res, next) ->
   res.status 404
   res.render 'error', title:   '500 · SureFire'
-                    , message: 'Sorry cant find that!'
+                    , message: 'Sorry can’t find that!'
 
 # Define application routes.
 app.get '/', (req, res) ->
