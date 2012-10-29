@@ -22,12 +22,6 @@ $ git submodule init
 $ git submodule update
 ```
 
-Install dependent packages using [NPM]:
-
-```sh
-$ npm install
-```
-
 Start the application with [Foreman]:
 
 ```sh
