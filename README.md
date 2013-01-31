@@ -1,4 +1,4 @@
-![SureFireThing.co.uk](//github.com/surefire/surefirething.co.uk/raw/master/assets/img/surefire.png)
+![SureFireThing.co.uk](/assets/img/surefire.png)
 
 [SureFire's][surefire] website. Powered by the [Express] web application
 framework for [Node.js] using [CoffeeScript], [Jade] and [LESS].
