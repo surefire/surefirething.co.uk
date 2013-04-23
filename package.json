@@ -1,40 +1,43 @@
-{ "name" : "surefirething.co.uk"
-, "version" : "0.0.1"
-, "private" : true
-, "description" : "SureFire's website."
-, "keywords" : ["surefire"]
-, "homepage" : "http://github.com/andrewgarner/surefirething.co.uk/"
-, "bugs" :
-  { "url" : "http://github.com/andrewgarner/surefirething.co.uk/issues"
-  , "email" : "info@surefirething.co.uk"
-  }
-, "author":
-  { "name" : "Andrew Garner"
-  , "email" : "andrew@andrewgarner.com"
-  , "url" : "http://andrewgarner.com/"
-  }
-, "licenses" :
-  [
-    { "type" : "MIT"
-    , "url" : "http://github.com/andrewgarner/surefirething.co.uk/LICENSE.md"
+{
+  "name": "surefirething.co.uk",
+  "version": "0.0.1",
+  "private": true,
+  "description": "SureFire's website.",
+  "keywords": [
+    "surefire"
+  ],
+  "homepage": "http://github.com/andrewgarner/surefirething.co.uk/",
+  "bugs": {
+    "url": "http://github.com/andrewgarner/surefirething.co.uk/issues",
+    "email": "info@surefirething.co.uk"
+  },
+  "author": {
+    "name": "Andrew Garner",
+    "email": "andrew@andrewgarner.com",
+    "url": "http://andrewgarner.com/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/andrewgarner/surefirething.co.uk/LICENSE.md"
     }
-  ]
-, "repository" :
-  { "type" : "git"
-  , "url" : "http://github.com/andrewgarner/surefirething.co.uk.git"
-  }
-, "dependencies" :
-  { "express" : "3.x"
-  , "connect-assets" : "https://github.com/surefire/connect-assets/tarball/master"
-  , "coffee-script" : "1.4.x"
-  , "jade" : "*"
-  , "less" : "1.3.x"
-  }
-, "devDependencies" :
-  { "docco" : "0.4.x"
-  }
-, "engines" :
-  { "node" : "0.8.x"
-  , "npm" : "1.1.x"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/andrewgarner/surefirething.co.uk.git"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "connect-assets": "https://github.com/surefire/connect-assets/tarball/master",
+    "coffee-script": "1.4.x",
+    "jade": "*",
+    "less": "1.3.x"
+  },
+  "devDependencies": {
+    "docco": "0.4.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
   }
 }
