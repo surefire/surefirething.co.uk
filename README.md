@@ -36,7 +36,11 @@ $ foreman start
 
 ## Documentation
 
-Annotated source documentation can be generated using [Docco]:
+Annotated source documentation can be generated using [Docco] and [Pygments]:
+
+```sh
+$ sudo easy_install Pygments
+```
 
 ```sh
 $ ./node_modules/.bin/cake docs
@@ -62,6 +66,7 @@ Copyright (c) 2012 SureFire. See [LICENSE](LICENSE.md) for details.
 [npm]: http://npmjs.org/
 [express]: http://expressjs.com/
 [docco]: http://jashkenas.github.com/docco/
+[pygments]: http://pygments.org/
 [coffeescript]: http://coffeescript.org/
 [jade]: http://jade-lang.com/
 [less]: http://lesscss.org/
