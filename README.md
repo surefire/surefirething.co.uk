@@ -34,6 +34,18 @@ $ foreman start
 00:00:01 web.1 | SureFire server listening on 0.0.0.0:3000
 ```
 
+## Automation
+
+[Grunt] is used as a task runner. In order to get started, you'll want to
+install Grunt's command line interface (CLI) globally.
+
+```sh
+$ npm install -g grunt-cli
+```
+
+This will put the `grunt` command in your system path, allowing it to be run
+from any directory.
+
 ## Documentation
 
 Annotated source documentation can be generated using [Docco] and [Pygments]:
@@ -43,9 +55,12 @@ $ sudo easy_install Pygments
 ```
 
 ```sh
-$ ./node_modules/.bin/cake docs
-docco: src/app.coffee -> docs/app.html
-docco: src/server.coffee -> docs/server.html
+$ grunt docco
+Running "docco:src" (docco) task
+docco: ./lib/app.coffee -> docs/app.html
+docco: ./lib/server.coffee -> docs/server.html
+
+Done, without errors.
 ...
 ```
 
@@ -64,6 +79,7 @@ Copyright (c) 2012 SureFire. See [LICENSE](LICENSE.md) for details.
 [foreman]: http://ddollar.github.com/foreman/
 [node.js]: http://nodejs.org/
 [npm]: http://npmjs.org/
+[grunt]: http://gruntjs.com/
 [express]: http://expressjs.com/
 [docco]: http://jashkenas.github.com/docco/
 [pygments]: http://pygments.org/
