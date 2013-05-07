@@ -17,9 +17,7 @@ framework for [Node.js] using [CoffeeScript], [Jade] and [LESS].
 Clone the repository:
 
 ```sh
-$ git clone git@github.com:surefire/surefirething.co.uk.git
-$ git submodule init
-$ git submodule update
+$ git clone --recursive git@github.com:surefire/surefirething.co.uk.git
 ```
 
 Start the application with [Foreman]:
