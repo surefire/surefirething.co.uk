@@ -19,6 +19,13 @@ app.set 'strict routing'
 # Configure application middleware to log all requests.
 app.use express.logger()
 
+# Force SSL
+app.use (req, res, next) ->
+  if req.header 'x-forwarded-proto' != 'https'
+    res.redirect "https://#{req.header 'host'}#{req.url}"
+  else
+    next()
+
 # Configure application middleware to compress response data with
 # gzip / deflate.
 app.use express.compress()
