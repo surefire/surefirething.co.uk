@@ -27,7 +27,7 @@
     "url": "http://github.com/andrewgarner/surefirething.co.uk.git"
   },
   "dependencies": {
-    "express": "3.x",
+    "express": "4.16.0",
     "connect-assets": "https://github.com/surefire/connect-assets/tarball/master",
     "coffee-script": "1.4.x",
     "jade": "*",
